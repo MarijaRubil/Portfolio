@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0%;
+  font-family: "Roboto", sans-serif;
+}
+
+h2,
+h3,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 18px;
+}
+
+li {
+  text-align: center;
+}
+
+.screen {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#e66465, #9198e5);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.name-wrapper {
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(216, 216, 216, 0.4);
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  flex: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.name__logo {
+  font-family: "Megrim", cursive;
+  color: #000000;
+  margin-right: 20px;
+}
+
+.navigation__link:last-of-type {
+  margin-right: 0;
+}
+
+.name {
+  text-decoration: none;
+  color: #353030;
+}
+
+.main {
+  max-width: 1200px;
+  width: 100%;
+  flex: 1;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.cv__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv__heading {
+  font-family: "Raleway", sans-serif;
+  color: #f66e6ecc;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 30px;
+  padding: 0 20px;
+}
+
+.cv1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.cv {
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fefffb55;
+  padding: 20px 25px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 2px 2px 16px rgba(129, 119, 119, 0.4);
+  margin-bottom: 30px;
+}
+
+.cv__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv__name {
+  color: #1c0111;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.cv__text {
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 470px) {
+  .cv1__heading {
+    margin-bottom: 5px;
+    font-size: 28px;
+  }
+  .navigation {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .cv1__heading {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 800px) and (orientation: landscape) {
+  .cv1__heading {
+    font-size: 40px;
+  }
+}
